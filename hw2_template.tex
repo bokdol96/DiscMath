@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\title{Homework 2 - Logic I }
+\author
+{
+Seung Hoon Kim 
+\and sk4110
+}
+
+
+\begin{document}
+    \maketitle
+    
+    \section*{Question 1}
+    \begin{center}
+        \begin{tabular}{ c|c|c||c||c }
+         $p$ & $q$ & $r$ & $p \wedge \lnot q$ & $(p \wedge \lnot q) \rightarrow r$ \\ 
+        \hline
+         $T$ & $T$ & $T$ & $F$ & $T$ \\
+         $T$ & $T$ & $F$ & $F$ & $T$ \\
+         $T$ & $F$ & $T$ & $T$ & $T$ \\
+         $F$ & $T$ & $T$ & $F$ & $T$ \\
+         $T$ & $F$ & $F$ & $T$ & $F$ \\
+         $F$ & $T$ & $F$ & $F$ & $T$ \\
+         $F$ & $F$ & $T$ & $F$ & $T$ \\
+         $F$ & $F$ & $F$ & $F$ & $T$ \\             
+        \end{tabular}
+    \end{center}
+    \newpage
+    \section*{Question 2}
+    \begin{enumerate}[label=(\alph*)]
+        \item 
+            \begin{enumerate}[label=\arabic*.]
+                \item[]
+                \item $\lnot p \wedge \lnot h$
+                \item $s \wedge (\lnot h \vee \lnot p)$ 
+                \item $\lnot p \rightarrow s$
+                \item $\lnot h \rightarrow s$
+                \item $\lnot h \leftrightarrow s$
+            \end{enumerate}
+
+        \item 
+            \begin{itemize}
+                \item[]
+                \item $\lnot(\lnot p \wedge \lnot h) \equiv p \vee h$
+                \item $\lnot (s \wedge (\lnot h \vee \lnot p)) \equiv \lnot s \vee (h \wedge p)$
+                \item $\lnot(\lnot p \rightarrow s) \equiv \lnot p \wedge \lnot s$
+            \end{itemize}
+
+    \end{enumerate}
+    \newpage
+    \section*{Question 3}
+        \begin{enumerate}[label=\arabic*.]
+            \item 
+            \begin{itemize}
+                \item[]
+                \item \textbf{Converse:} If I miss class then my bus is late. 
+                \item \textbf{Inverse:} If my bus is not late then I do not miss class.
+                \item \textbf{Contrapositive:} If I do not miss class then my bus is not late. 
+            \end{itemize}
+            \item My bus is late or I did not miss class
+        \end{enumerate}
+    \newpage
+    \section*{Question 4}
+    \begin{enumerate}[label=\arabic*.]
+        \item  
+        \begin{tabular}{c c c c c l}
+            $(p \vee q)$ & $\wedge$ & $(\lnot p \wedge \lnot q)$\\ \cline{3-3}
+             & & $\lnot(p \vee q)$ & & & \dots DeMorgan’s Law \\
+            $(p \vee q)$ & $\wedge$ & $\lnot(p \vee q)$ & $\equiv$ & $F$ & \dots Negation Law 
+            
+        \end{tabular}            
+        \item 
+        \begin{tabular}{c c c c c l}
+            $(p\rightarrow q)$ & $\wedge$ & $(p\rightarrow r)$ & $\equiv$ & $p\rightarrow (q \wedge r)$ & \\ \cline{1-1} \cline{3-3}
+            $(\lnot p \vee q)$ & $\wedge$ & $(\lnot p \vee r)$ & & & \dots Implication to Disjunction Law \\ \cline{1-1} \cline{3-3}
+            $(q \vee \lnot p)$ & $\wedge$ & $(r \vee \lnot p)$ & & & \dots Commutativity Law \\ \cline{1-3}
+            $(q \wedge r)$ & $\vee$ & $\lnot p$ & & &  \dots Distributivity law \\ \cline{1-3}
+            $p$ & $\rightarrow $ & $(q \wedge r)$ & & & \dots Implication to Disjunction Law
+        \end{tabular}   
+        \end{enumerate}
+    \newpage
+    \section*{Question 5}
+        \begin{enumerate}[label=\arabic*.]
+            \item hamster
+            \item hamster
+        \end{enumerate}
+    \newpage
+    \section*{Question 6}
+    Insert answer for question 5 here.
+
+   
+
+   \end{document}
